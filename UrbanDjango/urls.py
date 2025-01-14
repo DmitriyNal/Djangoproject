@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.urls import path
-from tsk2.views import index, IndexView, home_page
+# from tsk2.views import index, IndexView, home_page
+from tsk4.views import index, IndexView, home_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
