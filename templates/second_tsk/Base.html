@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{%block title%}{{title}}{%endblock%}</title>
+</head>
+<body>
+    <header>
+        <h1>{{choise}}</h1>
+    </header>
+    <main>
+    {%block content%}
+    <p>
+          <a href="#">Главная </a>
+    <p>
+    <p>
+        <a href='http://127.0.0.1:8000/shop/'>{{shop}}</a>
+    </p>
+    <p>
+        <a href='http://127.0.0.1:8000/credit/'>{{credit}}</a>
+    </p>
+
+
+
+    {%endblock%}
+    </main>
+    <footer>
+        <p>© 2025 Toyota Centre</p>
+    </footer>
+</body>
+</html>

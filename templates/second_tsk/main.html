@@ -1,0 +1,27 @@
+{% extends "second_tsk/base.html" %}
+
+{% block title %} {{title}} {% endblock %}
+{% block content %}
+<p>
+    <h2>Просмотрите понравившуюся вам модель авто</h2>
+</p>
+<ul>
+    <li>
+        {{offers}}
+        <a href="https://toyotarostov.ru/special-offers">
+            <button>Подробнее</button>
+        </a>
+    </li>
+    <li>
+        {{auto}}
+        <a href="https://toyotarostov.ru/new-cars/new">
+        <button>Подробнее</button>
+        </a>
+    </li>
+</ul>
+<h2>
+<a href="http://127.0.0.1:8000/">На главную</a>
+</h2>
+{% endblock %}
+
+
