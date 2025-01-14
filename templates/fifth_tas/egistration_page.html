@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Зарегистрироваться</title>
+</head>
+<body>
+  <form method="POST">
+    {% csrf_token %}
+    <label for = "login">Введите логин</label>
+    <input type="text" id="login" name="login" required>
+
+    <label for = "password">Введите пароль</label>
+    <input type="password" id="password" name="password" minlength="8" required >
+
+    <label for = "repeat_password">Повторите пароль</label>
+    <input type="password" id="repeat_password" name="repeat_password" minlength="8" required >
+
+    <label for = "age">Введите возраст</label>
+    <input type="number" id="age" name="age" required>
+
+   <button type="submit">Зарегистрироваться</button>
+
+  </form>
+
+
+</body>
+</html>
